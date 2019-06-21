@@ -1,18 +1,17 @@
-<!--<mat-sidenav-container>-->
-  <!--<mat-sidenav>-->
-    <app-sidebar #sidenav></app-sidebar>
-  <!--</mat-sidenav>-->
-  <!--<mat-sidenav-content>-->
+<mat-drawer-container>
+  <mat-drawer #drawer mode="side">
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
     <div class="site">
       <header>
-        <app-header></app-header>
+        <app-header (toggle)="drawer.toggle()"></app-header>
       </header>
       <main>
-        <button (click)="sidenav.open()">打开侧边栏</button>
+
+
       </main>
       <footer>
         <app-footer></app-footer>
       </footer>
     </div>
-  <!--</mat-sidenav-content>-->
-<!--</mat-sidenav-container>-->
+</mat-drawer-container>
