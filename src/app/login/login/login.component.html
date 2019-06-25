@@ -1,14 +1,35 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>登录</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <mt-input-container>
-      <input matInput type="text" placeholder="您的Email">
-    </mt-input-container>
-  </mat-card-content>
-  <mat-card-actions>
-    <p>还没有账户？<a href="">注册</a></p>
-    <p>忘记密码？<a href="">找回</a></p>
-  </mat-card-actions>
-</mat-card>
+<form>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>登录</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field class="full-width">
+        <!--<span matPrefix>wang</span>-->
+        <input matInput type="text" placeholder="您的Email">
+        <!--<span matSuffix>@gmail.com</span>-->
+        <mat-hint><strong>必填项</strong></mat-hint>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input type="password" matInput placeholder="您的密码">
+      </mat-form-field>
+      <button mat-raised-button type="button">登录</button>
+    </mat-card-content>
+    <mat-card-actions class="text-right">
+      <p>还没有账户？<a href="">注册</a></p>
+      <p>忘记密码？<a href="">找回</a></p>
+    </mat-card-actions>
+  </mat-card>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>每日佳句</mat-card-title>
+      <mat-card-subtitle>
+        没有力气再往前走，也没有余地往后退，原地踏步又心有不甘，这就是所谓的焦虑。
+      </mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="/assets/img/quote_fallback.jpeg" alt="">
+    <mat-card-content>
+      There is no strength to move forward, no room to retreat, in situ and unwilling to step, this is the so-called anxiety.
+    </mat-card-content>
+  </mat-card>
+</form>

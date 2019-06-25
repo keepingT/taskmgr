@@ -5,6 +5,7 @@ import {
   MatIconModule,
   MatButtonModule,
   MatCardModule,
+  MatFormFieldModule,
   MatInputModule,
 } from '@angular/material';
 
@@ -16,15 +17,16 @@ import {
     MatIconModule,
     MatButtonModule,
     MatCardModule,
+    MatFormFieldModule,
     MatInputModule,
   ],
   exports: [
-    //通过导入SharedModule，即可导入CommonModule
     CommonModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
     MatCardModule,
+    MatFormFieldModule,
     MatInputModule,
   ]
 })
