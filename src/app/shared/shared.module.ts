@@ -8,6 +8,7 @@ import {
   MatFormFieldModule,
   MatInputModule,
 } from '@angular/material';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [],
@@ -19,6 +20,7 @@ import {
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
+    MatGridListModule,
   ],
   exports: [
     CommonModule,
@@ -28,6 +30,7 @@ import {
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
+    MatGridListModule,
   ]
 })
 export class SharedModule {
