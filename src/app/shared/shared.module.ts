@@ -8,6 +8,7 @@ import {
   MatFormFieldModule,
   MatInputModule,
   MatDialogModule,
+  MatAutocompleteModule,
 } from '@angular/material';
 import {MatGridListModule} from '@angular/material/grid-list';
 
@@ -23,6 +24,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatInputModule,
     MatGridListModule,
     MatDialogModule,
+    MatAutocompleteModule,
   ],
   exports: [
     CommonModule,
@@ -34,6 +36,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatInputModule,
     MatGridListModule,
     MatDialogModule,
+    MatAutocompleteModule,
   ]
 })
 export class SharedModule {
