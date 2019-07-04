@@ -7,6 +7,7 @@ import {
   MatCardModule,
   MatFormFieldModule,
   MatInputModule,
+  MatDialogModule,
 } from '@angular/material';
 import {MatGridListModule} from '@angular/material/grid-list';
 
@@ -21,6 +22,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatFormFieldModule,
     MatInputModule,
     MatGridListModule,
+    MatDialogModule,
   ],
   exports: [
     CommonModule,
@@ -31,6 +33,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatFormFieldModule,
     MatInputModule,
     MatGridListModule,
+    MatDialogModule,
   ]
 })
 export class SharedModule {

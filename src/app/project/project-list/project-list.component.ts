@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { NewProjectComponent } from '../new-project/new-project.component';
 
 @Component({
   selector: 'app-project-list',
@@ -21,13 +23,25 @@ export class ProjectListComponent implements OnInit {
     desc:'这是一个大数据应用平台'
   }];
 
-  constructor() { }
+  constructor(
+    private dialog: MatDialog
+  ) { }
 
   ngOnInit() {
 
   }
 
   openNewProjectDialog() {
+    const dialogRef = this.dialog.open(NewProjectComponent, {
+      width: '400px',
+      height: '330px',
+      data: { dark : true }
+    });
+
+    dialogRef.afterClosed().subscribe(res => {
+      console.log(res);
+    });
+
 
   }
 
