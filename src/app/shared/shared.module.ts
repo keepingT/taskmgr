@@ -7,14 +7,18 @@ import {
   MatCardModule,
   MatFormFieldModule,
   MatInputModule,
+  MatGridListModule,
   MatDialogModule,
   MatAutocompleteModule,
   MatListModule,
   MatMenuModule,
   MatCheckboxModule,
   MatTooltipModule,
+  MatDatepickerModule,
+  MatNativeDateModule,
+  MatRadioModule,
 } from '@angular/material';
-import {MatGridListModule} from '@angular/material/grid-list';
+//import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [],
@@ -33,6 +37,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatMenuModule,
     MatCheckboxModule,
     MatTooltipModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatRadioModule,
   ],
   exports: [
     CommonModule,
@@ -49,6 +56,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatMenuModule,
     MatCheckboxModule,
     MatTooltipModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatRadioModule,
   ]
 })
 export class SharedModule {

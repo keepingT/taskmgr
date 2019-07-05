@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import {NewTaskComponent} from "../new-task/new-task.component";
 
 @Component({
   selector: 'app-task-home',
@@ -22,7 +24,7 @@ export class TaskHomeComponent implements OnInit {
       },
       dueDate: new Date(),
       reminder: new Date()
-    },{
+    }, {
       id: 2,
       desc: '任务二：完成PPT作业',
       completed: false,
@@ -34,7 +36,7 @@ export class TaskHomeComponent implements OnInit {
       },
       dueDate: new Date()
     }]
-  },{
+  }, {
     id: 2,
     name: '进行中',
     tasks: [{
@@ -48,7 +50,7 @@ export class TaskHomeComponent implements OnInit {
         avatar: 'avatars:svg-13'
       },
       dueDate: new Date()
-    },{
+    }, {
       id: 2,
       desc: '任务二：制定项目计划',
       completed: false,
@@ -62,9 +64,13 @@ export class TaskHomeComponent implements OnInit {
     }]
   }];
 
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit() {
+  }
+
+  launchNewTaskDialog() {
+    this.dialog.open(NewTaskComponent);
   }
 
 }
