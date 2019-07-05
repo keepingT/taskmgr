@@ -11,6 +11,8 @@ import {
   MatAutocompleteModule,
   MatListModule,
   MatMenuModule,
+  MatCheckboxModule,
+  MatTooltipModule,
 } from '@angular/material';
 import {MatGridListModule} from '@angular/material/grid-list';
 
@@ -29,6 +31,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatAutocompleteModule,
     MatListModule,
     MatMenuModule,
+    MatCheckboxModule,
+    MatTooltipModule,
   ],
   exports: [
     CommonModule,
@@ -43,6 +47,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatAutocompleteModule,
     MatListModule,
     MatMenuModule,
+    MatCheckboxModule,
+    MatTooltipModule,
   ]
 })
 export class SharedModule {
