@@ -5,17 +5,11 @@
       <input matInput type="text" placeholder="任务内容">
     </mat-form-field>
     <mat-form-field class="full-width">
-      <mat-radio-group>
-        <mat-radio-button *ngFor="let priority of priorities" [value]="priority.value">
-          {{priority.label}}
-        </mat-radio-button>
-      </mat-radio-group>
-    </mat-form-field>
-
-    <mat-form-field>
-      <input matInput [matDatepicker]="picker" placeholder="Choose a date" name="picker">
-      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-      <mat-datepicker #picker></mat-datepicker>
+          <!--<mat-radio-group>-->
+        <!--<mat-radio-button *ngFor="let priority of priorities" [value]="priority.value">-->
+          <!--{{priority.label}}-->
+        <!--</mat-radio-button>-->
+      <!--</mat-radio-group>-->
     </mat-form-field>
 
     <!--<mat-form-field class="full-width">-->
@@ -23,7 +17,7 @@
       <!--<mat-datepicker-toggle matSuffix [for]="dueDatepicker"></mat-datepicker-toggle>-->
       <!--<mat-datepicker #dueDatepicker></mat-datepicker>-->
     <!--</mat-form-field>-->
-    <!---->
+
 
     <!--<mat-form-field class="full-width">-->
       <!--<input matInput [matDatepicker]="reminderDatepicker" type="text" placeholder="任务提醒日期">-->
