@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 
@@ -21,7 +22,8 @@ import {TaskModule} from "./task/task.module";
     AppRoutingModule,
     LoginModule,
     ProjectModule,
-    TaskModule
+    TaskModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
