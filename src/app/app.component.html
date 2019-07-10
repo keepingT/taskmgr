@@ -1,14 +1,14 @@
-<mat-drawer-container>
-  <mat-drawer #drawer mode="side">
+<mat-drawer-container [class.my-dark-theme]="darkTheme">
+  <mat-drawer #drawer>
     <app-sidebar></app-sidebar>
   </mat-drawer>
     <div class="site">
       <header>
-        <app-header (toggle)="drawer.toggle()"></app-header>
+        <app-header (toggle)="drawer.toggle()" (toggleDarkTheme)="switchTheme($event)"></app-header>
       </header>
       <main>
-        <!--<router-outlet></router-outlet>-->
-        <div class="square" [@square]="squareState" (click)="onClick()"></div>
+        <router-outlet></router-outlet>
+        <!--<div class="square" [@square]="squareState" (click)="onClick()"></div>-->
       </main>
       <footer>
         <app-footer></app-footer>

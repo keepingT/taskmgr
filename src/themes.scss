@@ -1,0 +1,30 @@
+/* @Name: themes
+*  @Description:
+*  @Creation Time: 2019/6/26 下午8:56.
+*  @Author: tangjp
+*  @Since:  
+*/
+@import '~@angular/material/_theming.scss';
+
+@include mat-core();
+
+// 定义主题
+$my-app-primary:mat-palette($mat-indigo);
+$my-app-accent:mat-palette($mat-pink, A200, A100, A400);
+$my-app-warn:mat-palette($mat-red);
+
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+
+//使用主题
+@include angular-material-theme($my-app-theme);
+
+// 定义主题
+$my-dark-primary:mat-palette($mat-blue-grey);
+$my-dark-accent:mat-palette($mat-amber, A200, A100, A400);
+$my-dark-warn:mat-palette($mat-deep-orange);
+
+$my-dark-theme: mat-light-theme($my-dark-primary, $my-dark-accent, $my-dark-warn);
+
+.my-dark-theme {
+  @include angular-material-theme($my-dark-theme);
+}

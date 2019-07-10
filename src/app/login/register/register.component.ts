@@ -12,7 +12,7 @@ export class RegisterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.items = Array(16).fill(0).map((v, i) => `avatars: svg-${i+1}`);
+    this.items = Array(16).fill(0).map((v, i) => `avatars:svg-${i+1}`);
   }
 
 }

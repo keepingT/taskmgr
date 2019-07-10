@@ -18,6 +18,7 @@ import {
   MatNativeDateModule,
   MatRadioModule,
   MatSelectModule,
+  MatSlideToggleModule,
 } from '@angular/material';
 //import {MatGridListModule} from '@angular/material/grid-list';
 
@@ -42,6 +43,7 @@ import {
     MatNativeDateModule,
     MatRadioModule,
     MatSelectModule,
+    MatSlideToggleModule,
   ],
   exports: [
     CommonModule,
@@ -62,6 +64,7 @@ import {
     MatNativeDateModule,
     MatRadioModule,
     MatSelectModule,
+    MatSlideToggleModule,
   ]
 })
 export class SharedModule {
