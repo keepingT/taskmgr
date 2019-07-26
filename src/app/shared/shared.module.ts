@@ -19,8 +19,10 @@ import {
   MatRadioModule,
   MatSelectModule,
   MatSlideToggleModule,
+  MatSidenavModule,
 } from '@angular/material';
 //import {MatGridListModule} from '@angular/material/grid-list';
+//import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [],
@@ -44,6 +46,7 @@ import {
     MatRadioModule,
     MatSelectModule,
     MatSlideToggleModule,
+    MatSidenavModule,
   ],
   exports: [
     CommonModule,
@@ -65,6 +68,7 @@ import {
     MatRadioModule,
     MatSelectModule,
     MatSlideToggleModule,
+    MatSidenavModule
   ]
 })
 export class SharedModule {
